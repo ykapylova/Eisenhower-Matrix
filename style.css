@@ -1,0 +1,102 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5em;
+}
+
+button {
+    font-family: 'Caveat', cursive;
+    font-size: 1em;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1vw;
+}
+
+.matrix {
+    display: grid;
+    grid-template-rows: 40vh 40vh;
+    grid-template-columns: 40vh 40vh;
+    gap: 2vw;
+    margin: 1vw;
+    width: calc(80vh + 3vw);
+}
+
+.matrix-element {
+    padding: 3%;
+    position: relative;
+    border-radius: 3%;
+}
+
+.matrix-element__items {
+    list-style-type: square;
+    margin-top: 5%;
+    font-size: 0.8em;
+}
+
+/* .matrix-element__items * {
+    margin: -4%;
+} */
+
+.matrix-element__important_urgently {
+    background-color: rgba(255, 121, 137, 0.416);
+}
+
+.matrix-element__important_not_urgently,
+.matrix-element__unimportant_urgently {
+    background-color: rgba(255, 255, 112, 0.499);
+}
+
+.matrix-element__unimportant_not_urgently {
+    background-color: rgba(112, 255, 112, 0.406);
+}
+
+.matrix-element__explanation {
+    font-size: 0.65em;
+}
+
+.matrix-element__action-name {
+    font-weight: bold;
+}
+
+.matrix-element__reset {
+    position: absolute;
+    bottom: 3%;
+    right: 3%;
+}
+
+section {
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 250px;
+    grid-template-rows: 50px 1fr 1fr;
+}
+
+section header {
+    grid-column: 1 / 4;
+    grid-row: 1;
+}
+
+section nav {
+    grid-column: 1;
+    grid-row: 2 / 3;
+}
+
+section article {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+section aside {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+section footer {
+    grid-column: 1 / 4;
+    grid-row: 3;
+}

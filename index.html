@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  </head>
+
+  <body>
+    <div class="form">
+      <input type="text" name="new_item" class="form_item" />
+      <div>
+        <input
+          type="checkbox"
+          name="important"
+          class="form_checkbox__important"
+        />Важно
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          name="urgently_check"
+          class="form_checkbox__urgently"
+        />Срочно
+      </div>
+
+      <img
+        class="form_button"
+        src="img/icon-plus.png"
+        width="40"
+        alt=""
+        srcset=""
+      />
+    </div>
+
+    <div class="matrix">
+      <div class="matrix-element matrix-element__important_urgently">
+        <div class="matrix-element__action-name">Сделай это</div>
+        <!-- <div class="matrix-element__explanation">Дела с чёткими дедлайнами и последствиями при бездействии.</div> -->
+        <ul class="matrix-element__items"></ul>
+        <img
+          class="matrix-element__reset"
+          src="img/icon-refresh.png"
+          width="40px"
+          alt="Обновить"
+        />
+      </div>
+      <div class="matrix-element matrix-element__important_not_urgently">
+        <div class="matrix-element__action-name">Запланируй это</div>
+        <!-- <div class="matrix-element__explanation">Дела без дедлайнов, которые продвигают вас ближе к вашей цели. Можно отложить без проблем.</div> -->
+        <ul class="matrix-element__items"></ul>
+        <img
+          class="matrix-element__reset"
+          src="img/icon-refresh.png"
+          width="40px"
+          alt="Обновить"
+        />
+      </div>
+      <div class="matrix-element matrix-element__unimportant_urgently">
+        <div class="matrix-element__action-name">Делегируй это</div>
+        <!-- <div class="matrix-element__explanation">Дела, которые должны быть выполнены, но не требуют особых навыков. Рутина.</div> -->
+        <ul class="matrix-element__items"></ul>
+        <img
+          class="matrix-element__reset"
+          src="img/icon-refresh.png"
+          width="40px"
+          alt="Обновить"
+        />
+      </div>
+      <div class="matrix-element matrix-element__unimportant_not_urgently">
+        <div class="matrix-element__action-name">Убери это вообще</div>
+        <!-- <div class="matrix-element__explanation">Отвлекающие факторы, от которых потом становится хуже. Можно выполнять, но только в меру.</div> -->
+        <ul class="matrix-element__items"></ul>
+        <img
+          class="matrix-element__reset"
+          src="img/icon-refresh.png"
+          width="40px"
+          alt="Обновить"
+        />
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
